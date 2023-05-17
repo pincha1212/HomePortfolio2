@@ -1,9 +1,39 @@
-<ul class="list-group custom-list">
-  <li class="list-group-item"><a class="btn btn-primary" routerLink="sobre-mi">Sobre</a></li>
-  <li class="list-group-item"><a class="btn btn-primary" routerLink="menu">Menú</a></li>
-  <li class="list-group-item"><a class="btn btn-primary" routerLink="galeria-fotos">Galería de Fotos</a></li>
-  <li class="list-group-item"><a class="btn btn-primary" routerLink="blog">Blog</a></li>
-  <li class="list-group-item"><a class="btn btn-primary" routerLink="contacto">Contacto</a></li>
-  <li class="list-group-item"><a class="btn btn-primary" routerLink="home">Inicio</a></li>
-</ul>
-<router-outlet></router-outlet>
+<div class="container">
+  <ul class="list-group custom-list border-bottom">
+    <li class="list-group-item"><a class="btn " routerLink="home">INICIO</a></li>
+    <li class="list-group-item"><a class="btn " routerLink="sobre-mi">SOBRE MI</a></li>
+    <li class="list-group-item"><a class="btn " routerLink="menu">MENÚ</a></li>
+    <li class="list-group-item"><a class="btn " routerLink="galeria-fotos">IMAGENES ILUSTRATIVAS</a></li>
+    <li class="list-group-item"><a class="btn " routerLink="blog">BLOG</a></li>
+    <li class="list-group-item "><a class="btn " routerLink="contacto">CONTACTO</a></li>
+  </ul>
+</div>
+<div class="py-3 my-4">
+  <router-outlet></router-outlet>
+</div>
+
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap" />
+        </svg>
+      </a>
+      <span class="text-muted">&copy; 2023 Federico Barzola, Developer Web</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAflJREFUSEvtVj1z00AU3JXsDCH0uIxjy4OPgvS4Jz0UoYIf4CJ0KUKVFEkFhelSkB56UtH4B0BhhbHl2KXpzQyTRPeYEyjI1pcjz6SKOt27u31v9+2TiFt6eEs4uAOaYbpWe1z3bf9psKjtydjrnUY3KKUeuK47NWsz1K07avN+GV4YzNKv2lBtiDyP7iEwoWV1fPHrFDqjwdleGJ8B2nCa74VYWy3xTRZYzVGvNeRVWiIEfmlwz9acDoc9L1ZRtdE8hqBmMtPg0Xjgfku6rOo0v+Z065QA75W5nUhd1WkeAPjLueFV8EWv8GTsupNwzdBLyLtMIGK4WuJOlJVZ6hqqJSL7sUsITyBdm7Yn2q8I2M4CssCT4cD9OKff/1eTrUW9JcJnyxg5FyhoBuDJMiDBWbE+jLzep9SKNhqPdpetJsAp82VU17iPlKpYl3IswFrhqoifo/7Z9vz52Kwzbv59pdsQtooAJukTq8gsrCtV4ZUcGD/dtCpj1Kh3UjUKA0W1Ivn2vO92kxJM/UyYMSOQF4vSR8rpef/HYcZYSifoH437ENSzaMwDSdTIjH6U8FB83RJiK1cn8vOo73by9l1TZ7K3LmV3UcMS+E5tdcLpvDDQ9dA0XXfBFqg3QVTC7jMXB2YUqysr0p035I2B8g4Ujd/9nBRlDn8Aa0fIG86CodAAAAAASUVORK5CYII=" /></a>
+      </li>
+      <li class="ms-3"><a class="text-muted" href="#"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAnVJREFUSEvFlj9MU1EUxr9z3kMoISzGiIOhpX+0r4MyaYKLkyS6yS4DGBNdHIwuTDDIpAO6GEmNMWLUyUUXHSzOGtNX+4+yYKSLg2iV99495mkLbXmvoW0Cd3rv5pzzu9+59365hD0atEcc7D8oaBhDbKkxIRoiQaSVcgE2hKSgOdpysZgueMV6KgpFEhMgdQnAQAetTQV6aN40zY363B2gKuRqB4DtFEKhlMtM+4LcdpElDzpRQsAnAU5sFRe+VyqkX9T+GxR1rKZatCG/SVUDKBw1JhXE3Zudg7AuxEnNRsHplQ22ERGRcQBjDHpUzJvJkdjxWyJ0rpZcymfOeioaicbvNsivRhHJmz6dFzY3NxnoH1TKCui68yuXy6216kJ7IMJ6QKcp27b7LNEnATn/n0+fmelZMZteDsWMaxC52NyGtkDCPK87fz44dODyNmSrIWusqTu9zNmKJa+6A4GuO+yUdcVPPPdO6H6pYD4PxeJLEByuj2lLESueZmZlw37oc0gWS7nMY6/9bQtERDOOJkXNwQ0RjDbDmHm2mE2/DUXj77pqHYBUKZ+ZCUbip4lxBYLhWkEBLR0cDCx+/1E5JSKz3YLgHojVbPr1cMQY1UiFIBwgjb4ePXLofblc7qtY8tTLTfxb13Th6lcoJMl+nV/Wm+VIzDgjIjf9LMsX1NIZapcX+Oh+CnCylfES8HMln7ng6QzhcCKiWLmm2vVw3WQl9+W2J8idDEXjc65/dUNy1agemlo1zW++IMMwBn5bMuflebuB/4MwL7iHpz7e980QPJYYJ1ETEIR3CwBJSumcrFfiq2g3RTuJ2f9XUCerbpXzFw+8JSq1QkT9AAAAAElFTkSuQmCC" /></a>
+      </li>
+      <li class="ms-3"><a class="text-muted" href="#"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAj9JREFUSEu9lq1701AUxt9zS56HPcxT2a8Umgrqp1AgcMzgKjY1BFUg5jBDMYEDMRQIcAimMMy3ogk0TVvZP4A+iC338CRdunzcfCEal+Tc+zvnfU/ODWFLF22Jg0KgmmFUxaXcA1MLhGqQnCQeVtzKheOMp3kJZ4KazW6LhTxioJe1EQFLyeJsMR2fp8Wlguqt7j5IHuVlGnlPmO7cooFpmn/i65SgRvv+K2Z6VApyHexXp9FgYZrL8PoEqEglBKwYGAqQ7w2TrEYSU1QWAXmeSCHf5/gxuq3RcVyeut75EZWRvs4n5rvgWQTU0DunDDzIMHQlNTqIy+LFJ0BepRo9C2I3IK+F6ZI/5fhyMbet4yDGU8CtuHvePTH1E2vppqoNqIg3AvTRsc2zYMOG3vnGwJ3U5AjT+cQ69BPZLCrQaXGQSq44dG5bD6OgHH+84P8BBT7dVJQGIjjMtO4eDctwI9R0w58YgrDLzK9VEjJosLDNYS6IgNHMtl5kNYkHJPBbVUxCunrbeA7mp4rRkQ+6131MUr5UrF3NbOtJxKO0rPyRQvzd34TFyJNh09660XdJsmDqqQYvEZ/PJr9OIiD/o2t3PoNxN02mss0Q+JMA1VIkCMBlQHFvE0M1awyVAQkpDsMHYgK0Pk35g+qLLwpiId4sfo/Xvl5fyvPIMIzdv1d8CkYzHFwEpIIkPApvuoahH275TBDBEa44Sft/yP058af6FfYB7gmmn4qhOmTQl3Dbq7o2F5Q1Ecq82xroH0zlJioLG/+VAAAAAElFTkSuQmCC" /></a>
+      </li>
+    </ul>
+  </footer>
+</div>

@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    font-size: 48px;
+    color: #333;
+}
+h3 {
+    font-size: 24px;
+    color: #666;
+}
+p {
+    font-size: 18px;
+    color: #999;
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0099ff;
+    color: white;
+    text-decoration: none;
+}
+.row {
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* esto crea un espacio de 20px entre los botones */
+}
+
+a {
+    font-size: 16px; /* esto reduce el tamaño de la fuente de los botones */
+}

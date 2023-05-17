@@ -1,0 +1,45 @@
+.btn {
+    background-color: red;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+.btn:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.1);
+  }
+
+.btn:active {
+    background-color: white;
+    color: red;
+  }
+
+.btn:focus{
+    background-color: white;
+    color: red;
+    transform: scale(1.1);
+}
+
+
+  
+
+.list-group-item {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+  }
+
+  .list-group{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
