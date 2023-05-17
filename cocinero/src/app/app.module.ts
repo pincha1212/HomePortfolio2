@@ -9,6 +9,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { GaleriaFotosComponent } from './components/galeria-fotos/galeria-fotos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { HomeComponent } from './components/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     MenuComponent,
     BlogComponent,
     GaleriaFotosComponent,
-    ContactoComponent
+    ContactoComponent,
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }
