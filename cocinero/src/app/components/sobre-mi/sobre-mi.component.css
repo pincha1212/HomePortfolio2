@@ -1,0 +1,37 @@
+.card {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }
+
+  .bg-red {
+    background-color: red;
+    color: white;
+  }
+
+.btn-summit{
+    background-color: white;
+    color:red;
+}
+
+.btn-summit:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+
+.map-container {
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }

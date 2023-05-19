@@ -1,0 +1,18 @@
+.button {
+    display: inline-block;
+    margin: 1rem;
+    width: 200px;
+    height: 70px;
+    border: 2px solid black;
+  }
+
+.button:hover{
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+  #container {
+    text-align: center;
+
+  }

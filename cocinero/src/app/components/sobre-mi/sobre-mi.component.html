@@ -1,2 +1,29 @@
-<h1>sobremiii</h1>
+<div class="card bg-red">
+    <div class="card-body">
+        <h5 class="card-title lead">Si tienes un código de descuento en reservas colócalo en "Requisitos Especiales" en
+            el siguiente paso. Gracias</h5>
+        <form>
+            <div class="mb-3">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="horario">Horario:</label>
+                <input type="time" id="horario" name="horario" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="tamaño">Tamaño de grupo:</label>
+                <input type="number" id="tamaño" name="tamaño" class="form-control" min="1" max="10">
+            </div>
+            <button type="submit" class="btn btn-summit">Reservar</button>
+        </form>
+    </div>
+</div>
 
+<div class="container justify-content-center">
+    <h3 class="text-center mb-4">Mapa de Ubicación</h3>
+    <div class="map-container">
+        <img src="https://firebasestorage.googleapis.com/v0/b/fdb-storage.appspot.com/o/images%2Fgoogle-maps-comida-mexicana.jpg?alt=media&token=f5b46d5d-4cb0-487e-9eca-3e71e38b4cfe"
+            alt="Mapa de Ubicación" class="img-fluid">
+    </div>
+</div>
